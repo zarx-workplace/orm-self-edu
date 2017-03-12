@@ -12,7 +12,7 @@ Education:
 https://docs.jboss.org/hibernate/orm/current/quickstart/html_single/#tutorial_annotations
 http://docs.jboss.org/hibernate/orm/current/userguide/html_single/Hibernate_User_Guide.html
 
-suggested by grow.epam.com
+suggested by grow matrix
 Hibernate and JPA
 - Hibernate relation to JPA
 - Difference between Hibernate and JPA
