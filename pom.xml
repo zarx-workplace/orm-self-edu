@@ -51,6 +51,8 @@
 
         <ver.spring>4.3.4.RELEASE</ver.spring>
         <ver.apch-cmmns.lang>3.5</ver.apch-cmmns.lang>
+        <ver.apch-cmmns.colns>4.1</ver.apch-cmmns.colns>
+        <ver.yodatime>2.9.9</ver.yodatime>
         <ver.logging.slf4j>1.7.22</ver.logging.slf4j>
         <!-- test tools -->
         <ver.junit>4.12</ver.junit>
@@ -67,6 +69,16 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>${ver.apch-cmmns.lang}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>${ver.apch-cmmns.colns}</version>
+        </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>${ver.yodatime}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
