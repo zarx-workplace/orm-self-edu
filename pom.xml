@@ -39,7 +39,7 @@
                 <directory>src/main/resources</directory>
                 <filtering>false</filtering>
                 <includes>
-                    <include>*</include>
+                    <include>**/*</include>
                 </includes>
             </resource>
         </resources>
@@ -54,6 +54,8 @@
         <ver.apch-cmmns.colns>4.1</ver.apch-cmmns.colns>
         <ver.yodatime>2.9.9</ver.yodatime>
         <ver.logging.slf4j>1.7.22</ver.logging.slf4j>
+        <ver.postgresql>42.1.1</ver.postgresql>
+        <ver.flyway>4.2.0</ver.flyway>
         <!-- test tools -->
         <ver.junit>4.12</ver.junit>
         <ver.mockito>2.3.7</ver.mockito>
@@ -65,6 +67,17 @@
             <artifactId>spring-context</artifactId>
             <version>${ver.spring}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${ver.spring}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>${ver.flyway}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
@@ -91,6 +104,12 @@
             <version>${ver.logging.slf4j}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${ver.postgresql}</version>
+        </dependency>
+
         <!-- TEST SCOPE -->
 
         <dependency>
@@ -104,6 +123,11 @@
             <artifactId>mockito-core</artifactId>
             <version>${ver.mockito}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>4.2.1.RELEASE</version>
         </dependency>
     </dependencies>
 </project>

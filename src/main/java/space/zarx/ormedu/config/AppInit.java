@@ -6,11 +6,14 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @Configuration
 @ComponentScan(basePackages = {"space.zarx.ormedu"})
-@EnableScheduling
+@PropertySource(value = {
+        "classpath:properties/db.properties"
+})
 public class AppInit {
 
     private static final Logger logger = LoggerFactory.getLogger(AppInit.class);
